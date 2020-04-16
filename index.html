@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyLuck</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+
+	    <style type="text/css" media="screen">
+	    	body{
+	    		margin: 0;
+	    		padding: 0;
+	    		background: url('bg.jpg') top center no-repeat;
+	    		background-size: cover;
+	    		color: #fff;
+	    		text-align: center;
+	    	}
+
+
+		div#text {
+		    margin-top: 150px;
+		    line-height: 15px;
+		}
+
+		p#price {
+		    bottom: 20px;
+		    position: absolute;
+		    margin: auto;
+		    display: block;
+		    width: 100%;
+		    font-size: 13px;
+		}
+
+		p.slogan {
+		    font-style: italic;
+		}
+
+		p.package {
+		    font-size: 20px;
+		    text-transform: uppercase;
+		}
+
+		p.title {
+		    font-weight: bold;
+		    font-size: 28px;
+		}
+
+		div#button{
+			position: absolute;
+			bottom: 80px;
+			width: 100%;
+		}
+
+		button{
+			border-radius: 30px;
+			color: #fff;
+			width: 130px;
+			height: 43px;
+			font-size: 14px;
+			margin: 10px;
+			border: none;
+		}
+
+		button.confirm{
+			background: #0abd11ed;
+		}
+
+button.confirm {}
+		button.cancel{
+			background: #f443368a;
+		}
+
+
+	    	
+    	@media screen and (min-width: 1024px) {
+	    	}
+    	}
+	    </style>
+    </head>
+
+    <body>
+    	<div id="text">
+	        <!-- <p class="title">DAILY PACKAGE</p> -->
+	        <p class="package">DAILY PACKAGE</p>
+	        <p class="slogan">Press confirm to enjoy the service</p>
+        </div>
+        <p id="price">10 cents/day</p>
+
+        <div id="button">
+        	<button class="confirm">Confirm</button>
+        	<button class="cancel">Cancel</button>
+        </div>
+    </body>
+</html>
