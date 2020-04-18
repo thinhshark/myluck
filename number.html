@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MyLuck</title>
+        <title>MYLUCK</title>
 
 		<link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
 
@@ -20,7 +20,7 @@
 
 
 		div#text {
-		    margin-top: 150px;
+		    margin-top: 105px;
 		    line-height: 15px;
 		}
 
@@ -30,6 +30,7 @@
 		    margin: auto;
 		    display: block;
 		    width: 100%;
+		    color: #f0f8ffe0;
 		    font-size: 13px;
 		}
 
@@ -44,7 +45,8 @@
 
 		p.title {
 		    font-weight: bold;
-		    font-size: 28px;
+		    font-size: 24px;
+		    text-shadow: -1px -1px 0 #ec6000, 1px -1px 0 #ec6000, -1px 1px 0 #ec6000, 1px 1px 0 #ec6000;
 		}
 
 		div#button{
@@ -56,15 +58,15 @@
 		button{
 			border-radius: 30px;
 			color: #fff;
-			width: 112px;
+			width: 130px;
 			height: 43px;
 			font-size: 14px;
-			margin:20px;
+			margin: 10px;
 			border: none;
 		}
 
 		button.confirm{
-			background: #0abd11ed;
+			background: #4caf50ed;
 		}
 
 		button.cancel{
@@ -72,34 +74,50 @@
 		}
 
 		input{
-			  width: 63%;
+			  width: 40%;
 			  padding: 15px;
 			  border: 1px solid #ccc;
 			  border-radius: 13px;
 			  font-size: 12px;
-			  opacity: 90%;
+			  opacity: 90% important!;
 			  }
 	    	
-    	@media screen and (min-width: 1024px) {
+    	@media screen and (max-width: 375px) {
+    			div#button{
+					bottom: -30px;
+				}
+				p#price {
+		    		bottom: -60px;
+		    	}
+		    	input{
+			  		width: 30%;
+			  	}
+	    	}
 	    	}
     	}
 	    </style>
     </head>
 
     <body>
+    	
     	<div id="text">
-	        <!-- <p class="title">DAILY PACKAGE</p> -->
-	        <p class="package">DAILY PACKAGE</p>
-	        <p class="slogan">Press confirm to enjoy the service</p>
+	        <p class="title">LET'S TRY YOUR LUCK</p>
+	        <!-- <p class="package">DAILY PACKAGE</p> -->
+	        <!-- <p class="slogan">Let's see your Future, your Destiny...</p> -->
         </div>
-        <p id="price">10 cents/day</p>
+        <p id="price">
+        	DAILY
+			<br>
+        	5 cents/day
+    	</p>
 
         <div id="button">
         	<form action="">
-	        	<input type="text" placeholder="Input your phone number">
+	        	<input type="text" placeholder="Input phone number">
+	        	<input type="text" placeholder="Input OTP">
 	        	<br>
 	        	<button class="confirm">Confirm</button>
-	        	<button class="cancel">Cancel</button>
+	        	<button class="cancel">Get OTP</button>
         	</form>
         </div>
     </body>

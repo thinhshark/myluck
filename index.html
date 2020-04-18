@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MyLuck</title>
+        <title>MYLUCK</title>
 
 		<link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
 
@@ -20,7 +20,7 @@
 
 
 		div#text {
-		    margin-top: 150px;
+		    margin-top: 120px;
 		    line-height: 15px;
 		}
 
@@ -30,6 +30,7 @@
 		    margin: auto;
 		    display: block;
 		    width: 100%;
+		    color: #f0f8ffe0;
 		    font-size: 13px;
 		}
 
@@ -44,12 +45,13 @@
 
 		p.title {
 		    font-weight: bold;
-		    font-size: 28px;
+		    font-size: 24px;
+		    text-shadow: -1px -1px 0 #ec6000, 1px -1px 0 #ec6000, -1px 1px 0 #ec6000, 1px 1px 0 #ec6000;
 		}
 
 		div#button{
 			position: absolute;
-			bottom: 80px;
+			bottom: 50px;
 			width: 100%;
 		}
 
@@ -64,17 +66,27 @@
 		}
 
 		button.confirm{
-			background: #0abd11ed;
+			width: 60%;
+			height: 55px;
+			font-weight: bold;
+			background: #fb5603e0;
+			font-size: 15px;
 		}
 
-button.confirm {}
 		button.cancel{
-			background: #f443368a;
+			background: #3e3e3e82;
+			color: #ffffff91;
 		}
 
 
 	    	
-    	@media screen and (min-width: 1024px) {
+    	@media screen and (max-width: 375px) {
+    			div#button{
+					bottom: -30px;
+				}
+				p#price {
+		    		bottom: -60px;
+		    	}
 	    	}
     	}
 	    </style>
@@ -82,14 +94,19 @@ button.confirm {}
 
     <body>
     	<div id="text">
-	        <!-- <p class="title">DAILY PACKAGE</p> -->
-	        <p class="package">DAILY PACKAGE</p>
-	        <p class="slogan">Press confirm to enjoy the service</p>
+	        <p class="title">LET'S TRY YOUR LUCK</p>
+	        <!-- <p class="package">DAILY PACKAGE</p> -->
+	        <!-- <p class="slogan">Let's see your Future, your Destiny...</p> -->
         </div>
-        <p id="price">10 cents/day</p>
+        <p id="price">
+        	DAILY PACKAGE
+			<br>
+        	5 cents/day
+    	</p>
 
         <div id="button">
         	<button class="confirm">Confirm</button>
+        	<br>
         	<button class="cancel">Cancel</button>
         </div>
     </body>
